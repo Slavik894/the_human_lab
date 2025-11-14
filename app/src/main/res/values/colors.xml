@@ -3,5 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="function_button_color">#180176</color>
-    <color name="function_button_pressed_color">#1d02ba</color>
+    <color name="function_button_pressed_color">#BAA9FE</color>
 </resources>
