@@ -1,5 +1,6 @@
 package com.example.thehumanlab;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -21,10 +22,8 @@ public class SelectGameActivity extends AppCompatActivity {
         binding = ActivitySelectGameBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         EdgeToEdge.enable(this);
-        ViewCompat.setOnApplyWindowInsetsListener(binding.getRoot(), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        binding.numbersGameBtn.setOnClickListener(view -> {
+            startActivity(new Intent(this, NumberMemoryActivity.class));
         });
     }
 }

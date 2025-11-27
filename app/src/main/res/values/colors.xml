@@ -4,4 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="function_button_color">#180176</color>
     <color name="function_button_pressed_color">#BAA9FE</color>
+    <color name="nm_background_blue">#4FC3F7</color>
+    <color name="nm_success_green">#00C853</color>
+    <color name="nm_fail_red">#D50000</color>
+    <color name="nm_dark_bg">#050518</color>
+    <color name="nm_button_bg">#0D47A1</color>
 </resources>
