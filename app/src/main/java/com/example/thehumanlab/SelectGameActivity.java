@@ -25,5 +25,9 @@ public class SelectGameActivity extends AppCompatActivity {
         binding.numbersGameBtn.setOnClickListener(view -> {
             startActivity(new Intent(this, NumberMemoryActivity.class));
         });
+        binding.cardsGameBtn.setOnClickListener(view -> {
+            startActivity(new Intent(this, PictureMemoryActivity.class));
+        });
+
     }
 }

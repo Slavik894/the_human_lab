@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheHumanLab" >
         <activity
+            android:name=".PictureMemoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".NumberMemoryActivity"
             android:exported="false" />
         <activity
