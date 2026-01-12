@@ -28,5 +28,8 @@ public class MainActivity extends AppCompatActivity {
         binding.homeScreenPlayButton.setOnClickListener(view -> {
             startActivity(new Intent(this, SelectGameActivity.class));
         });
+        binding.homeScreenStatisticsButton.setOnClickListener(view -> {
+            startActivity(new Intent(this, StatisticsActivity.class));
+        });
     }
 }

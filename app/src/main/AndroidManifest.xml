@@ -15,6 +15,12 @@
             android:name=".PictureMemoryActivity"
             android:exported="false" />
         <activity
+            android:name=".ReactionTime"
+            android:exported="false" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="false" />
+        <activity
             android:name=".NumberMemoryActivity"
             android:exported="false" />
         <activity

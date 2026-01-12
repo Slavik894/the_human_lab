@@ -9,4 +9,5 @@
     <color name="nm_fail_red">#D50000</color>
     <color name="nm_dark_bg">#050518</color>
     <color name="nm_button_bg">#0D47A1</color>
+    <color name="main_text_color">#E4E6C3</color>
 </resources>

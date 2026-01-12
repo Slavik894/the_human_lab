@@ -138,6 +138,9 @@ public class NumberMemoryActivity extends AppCompatActivity {
             });
 
         } else {
+            int scoreToSave = (currentRound > 1) ? currentRound - 1 : 0;
+            HighScoreManager scoreManager = new HighScoreManager(this);
+            scoreManager.saveNumberScore(scoreToSave);
             binding.mainRoot.setBackgroundColor(ContextCompat.getColor(this, R.color.nm_fail_red));
 
             binding.btnAction.setImageResource(R.drawable.lose);

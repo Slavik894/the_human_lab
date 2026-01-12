@@ -199,11 +199,18 @@ public class PictureMemoryActivity extends AppCompatActivity {
             binding.tvResultMessage.setText("Sukces!");
             binding.tvScoreInfo.setText("Ukończono rundę " + currentRound);
             binding.btnRetry.setImageResource(R.drawable.next);
+
+            HighScoreManager scoreManager = new HighScoreManager(this);
+            scoreManager.savePictureScore(currentRound);
         } else {
             binding.mainRoot.setBackgroundColor(ContextCompat.getColor(this, R.color.nm_fail_red));
             binding.tvResultMessage.setText("Porażka");
             binding.tvScoreInfo.setText("Zabrakło czasu w rundzie " + currentRound);
             binding.btnRetry.setImageResource(R.drawable.lose);
+
+            int score = (currentRound > 1) ? currentRound - 1 : 0;
+            HighScoreManager scoreManager = new HighScoreManager(this);
+            scoreManager.savePictureScore(score);
         }
     }
 

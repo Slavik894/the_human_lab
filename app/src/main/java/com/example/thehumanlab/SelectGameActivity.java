@@ -28,6 +28,9 @@ public class SelectGameActivity extends AppCompatActivity {
         binding.cardsGameBtn.setOnClickListener(view -> {
             startActivity(new Intent(this, PictureMemoryActivity.class));
         });
+        binding.reactionGameBtn.setOnClickListener(view -> {
+            startActivity(new Intent(this, ReactionTime.class));
+        });
 
     }
 }
