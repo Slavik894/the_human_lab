@@ -5,21 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/game_mode"
     tools:context=".SelectGameActivity">
 
-    <TextView
-        android:id="@+id/select_game_screen_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Wybierz tryb gry"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:layout_marginTop="70dp"
-        />
+<androidx.constraintlayout.widget.Guideline
+    android:layout_width="wrap_content"
+    android:id="@+id/select_game_screen_horizontal_line_1"
+    app:layout_constraintGuide_percent="0.35"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"/>
 
     <FrameLayout
         android:id="@+id/reaction_game_btn"
@@ -27,11 +21,10 @@
         android:layout_height="140dp"
         android:gravity="center"
         android:background="@drawable/function_button"
-        app:layout_constraintTop_toBottomOf="@id/select_game_screen_title"
+        app:layout_constraintTop_toBottomOf="@id/select_game_screen_horizontal_line_1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginTop="90dp"
         android:layout_marginLeft="32dp" >
 
         <ImageView
@@ -62,9 +55,8 @@
         android:layout_height="140dp"
         android:gravity="center"
         android:background="@drawable/function_button"
-        app:layout_constraintTop_toBottomOf="@id/select_game_screen_title"
+        app:layout_constraintTop_toBottomOf="@id/select_game_screen_horizontal_line_1"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="90dp"
         android:layout_marginRight="32dp"
         android:clickable="true"
         android:focusable="true">
